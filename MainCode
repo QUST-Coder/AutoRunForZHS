@@ -35,4 +35,4 @@ var fa=$("body");
   
         });  
         //开启自动模式
-        document.getElementById("lfsenior").click()
+        document.getElementById("lfsenior").click();
