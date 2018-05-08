@@ -32,6 +32,8 @@
            $("#lfsenior").html("自动模式已开启");
            //关闭弹题
             setInterval(function(){
+            //开启倍速播放
+            document.getElementsByClassName("speedTab15")[0].click();
                 $(".popboxes_close").click();
                 //获取当前进度
                 var spans=$(".current_play span");
