@@ -22,14 +22,14 @@ var fa=$("body");
             document.getElementsByClassName("speedTab15")[0].click();
                 $(".popboxes_close").click();  
                 //获取当前进度  
-                var spans=$(".current_play span");  
-                var progress=spans[spans.size()-1].innerHTML;  
-                if("100"==progress.substring(progress.lastIndexOf("『")+1,progress.lastIndexOf("』")-1)){  
+                //var spans=$(".current_play span");  
+                var progress=$(".progress-num").width();  
+                if("100"==progress){  
                    //播放完毕  
-                   $(".next_lesson a").click();  
+                   $(".nextButton").click() 
                 }else{  
-                   $("#vjs_mediaplayer_html5_api")[0].play();  
-                    $("#vjs_mediaplayer_html5_api")[0].muted=true;  
+                   $("#vjs_container_html5_api")[0].play();  
+                    $("#vjs_container_html5_api")[0].muted=true;  
                 }  
                  $("#lfsenior").html("自动模式已开启,本章进度:"+progress+"%");  
             },100);  
